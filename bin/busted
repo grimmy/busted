@@ -16,8 +16,6 @@ while getopts ":l:" optchar; do
   esac
 done
 
-shift $(($OPTIND - 1))
-
 if commandExists $COMMAND ; then
   COMMAND=$COMMAND;
 elif commandExists $LUA ; then
